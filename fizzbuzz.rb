@@ -7,14 +7,14 @@ def fizzBuzz(number)
   if number % 3 == 0 
    return "Fizz"
   
-  elsif number % 3 == 0
-   return "Fizz"
-  
   elsif number % 5 == 0
-  return  "Buzz"
+   return "Buzz"
+  
+  elsif number % 3 && number % 5 == 0
+  return  "FizzBuzz"
   
   else
-  return  number
+  return  nil
   end
 end
 
